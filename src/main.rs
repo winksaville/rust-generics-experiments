@@ -14,6 +14,7 @@ fn main() {
     println!("The largest char is {}", result);
 
     let pnt_int = ge::Point { x: 5, y: 10 };
+    println!("print pnt_int with {{}} {}", pnt_int);
     println!("print pnt_int with {{:?}} {:?}", pnt_int);
     println!("print pnt_int with {{:#?}} {:#?}", pnt_int);
 
