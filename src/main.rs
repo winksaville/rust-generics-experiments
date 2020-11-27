@@ -12,4 +12,8 @@ fn main() {
 
     let result = ge::largest(&char_list);
     println!("The largest char is {}", result);
+
+    let pnt_int = ge::Point { x: 5, y: 10 };
+    println!("pnt_int is x={} y={}", pnt_int.x, pnt_int.y);
+
 }

@@ -12,4 +12,9 @@ pub mod experiments {
         return largest;
     }
 
+    pub struct Point<T> {
+        pub x: T,
+        pub y: T,
+    }
+
 }
