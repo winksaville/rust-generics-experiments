@@ -1,20 +1,6 @@
-mod generics_experiments {
+mod generics;
 
-    pub fn largest<T: PartialOrd>(list: &[T]) -> &T {
-        let mut largest = &list[0];
-
-        for item in list {
-            if item > largest {
-                largest = item;
-            }
-        }
-
-        return largest;
-    }
-
-}
-
-use crate::generics_experiments as ge;
+use crate::generics::experiments as ge;
 
 fn main() {
     let number_list = vec![32, 50, 25, 100, 65];
