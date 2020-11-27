@@ -18,4 +18,13 @@ fn main() {
     println!("print pnt_int with {{:?}} {:?}", pnt_int);
     println!("print pnt_int with {{:#?}} {:#?}", pnt_int);
 
+    let pnt_float = ge::Point { x: 5.0, y: 10.0 };
+    println!("print pnt_int with {{}} {}", pnt_float);
+    println!("print pnt_int with {{:?}} {:?}", pnt_float);
+    println!("print pnt_int with {{:#?}} {:#?}", pnt_float);
+
+    let pnt_either = ge::Point { x: 5.0, y: 10 };
+    println!("print pnt_int with {{}} {}", pnt_either);
+    println!("print pnt_int with {{:?}} {:?}", pnt_either);
+    println!("print pnt_int with {{:#?}} {:#?}", pnt_either);
 }

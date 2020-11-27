@@ -14,14 +14,18 @@ pub mod experiments {
     }
 
     #[derive(Debug)]
-    pub struct Point<T> {
+    pub struct Point<T, U> {
         pub x: T,
-        pub y: T,
+        pub y: U,
     }
 
     use std::fmt;
 
-    impl<T> fmt::Display for Point<T> where T: fmt::Display, {
+    impl<T, U> fmt::Display for Point<T, U>
+    where
+        T: fmt::Display,
+        U: fmt::Display,
+    {
         fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
             write!(f, "{{ x={}, y={} }}", self.x, self.y)
         }
